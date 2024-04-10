@@ -1,7 +1,7 @@
 
 public class Avioane {
-	String planeID;
-	int totalEnginePower;
+	private String planeID;
+	private int totalEnginePower;
 
 	public String getPlaneID() {
 		return planeID;
