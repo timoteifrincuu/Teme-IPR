@@ -15,6 +15,6 @@ public class SwapList {
     }
 
      public static void swapFirstLast(ArrayList<String> list) {
-         Collections.swap(list, 0, list.size() - 1));
+         Collections.swap(list, 0, list.size() - 1);
      }
 }
