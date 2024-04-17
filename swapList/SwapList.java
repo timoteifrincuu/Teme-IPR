@@ -10,9 +10,11 @@ public class SwapList {
         list.add("strawberry");
         System.out.println("Initial list: " + list);
 
-        //swaps according to the indexes
-        Collections.swap(list, 0, 2);
+        swapFirstLast(list);
         System.out.println("Final list: " + list);
-
     }
+
+     public static void swapFirstLast(ArrayList<String> list) {
+         Collections.swap(list, 0, list.size() - 1));
+     }
 }
