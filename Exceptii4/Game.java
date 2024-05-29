@@ -62,7 +62,25 @@ public class Game {
     public void simulate(){
         Ball b = new Ball(50, 25);
         for(int i=0; i<1000;i++){
+            int x = (int)(Math.random()*101);
+            int y = (int)(Math.random()*51);
+            Ball b = new Ball(x,y);
 
+            try{
+                System.out.println(x + ", " + y);
+                b.shoot();
+            }catch(CornerException e){
+                totalCorners++;
+            }catch(GoalException e){
+                if(x==0){
+                    noGoals1++;
+                } 
+                else{
+                    noGoals2++;
+                }
+            }catch(OutException e){
+                totalOuts++;
+            }
         }
 
     }
